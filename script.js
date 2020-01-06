@@ -1,23 +1,31 @@
 // 1) Select the section with an id of container without using querySelector.
-
+let container = document.getElementById("container");
 
 // 2) Select the section with an id of container using querySelector.
-
+let container = document.querySelector(".container");
 
 // 3) Select all of the list items with a class of "second".
-
+let second = document.querySelectorAll(".second");
 
 // 4) Select a list item with a class of third, but only the list item inside of the ol tag.
+container.lastElementChild.querySelector(".third");
 
 // 5) Give the section with an id of container the text "Hello!".
+container.innerText = "Hello!";
 
 // 6) Add the class main to the div with a class of footer.
+let footer = document.getElementById("footer")
+footer.classList.add("main");
 
 // 7) Remove the class main on the div with a class of footer.
+footer.classList.remove("main");
 
 // 8) Create a new li element.
+let newLi = document.createElement("li");
 
 // 9) Give the li the text "four".
+let text = document.createElement("a");
+text = document.createTextNode("four");
 
 // 10) Append the li to the ul element.
 
